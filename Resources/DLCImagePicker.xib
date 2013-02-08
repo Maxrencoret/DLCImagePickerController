@@ -134,7 +134,6 @@
 								<int key="NSvFlags">-2147483356</int>
 								<string key="NSFrame">{{263, 3}, {65, 37}}</string>
 								<reference key="NSSuperview" ref="31350387"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -866,7 +865,7 @@
 			<string key="camera-button.png">{101, 41}</string>
 			<string key="camera-icon.png">{26, 21}</string>
 			<string key="clock.png">{25, 25}</string>
-			<string key="close.png">{22, 21}</string>
+			<string key="close.png">{29, 29}</string>
 			<string key="dock_bg.png">{320, 75}</string>
 			<string key="filter-close.png">{29, 28}</string>
 			<string key="filter-open.png">{28, 28}</string>

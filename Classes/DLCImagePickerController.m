@@ -386,6 +386,7 @@
     [self.photoCaptureButton setEnabled:NO];
     
     if (!isStatic) {
+        _sourceType = UIImagePickerControllerSourceTypeCamera;
         isStatic = YES;
         
         [self.libraryToggleButton setHidden:YES];
@@ -657,11 +658,13 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
 
+    _sourceType = picker.sourceType;
+
     UIImage* outputImage = [info objectForKey:UIImagePickerControllerEditedImage];
     if (outputImage == nil) {
         outputImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     }
-    
+
     if (outputImage) {
         staticPicture = [[GPUImagePicture alloc] initWithImage:outputImage smoothlyScaleOutput:YES];
         staticPictureOriginalOrientation = outputImage.imageOrientation;
