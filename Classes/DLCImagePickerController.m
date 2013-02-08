@@ -374,7 +374,7 @@
     
     [self prepareFilter];
     [self.retakeButton setHidden:NO];
-    [self.photoCaptureButton setTitle:@"Send" forState:UIControlStateNormal];
+    [self.photoCaptureButton setTitle:@"Done" forState:UIControlStateNormal];
     [self.photoCaptureButton setImage:nil forState:UIControlStateNormal];
     [self.photoCaptureButton setEnabled:YES];
     if(![self.filtersToggleButton isSelected]){
@@ -670,7 +670,7 @@
         [self.cameraToggleButton setEnabled:NO];
         [self.flashToggleButton setEnabled:NO];
         [self prepareStaticFilter];
-        [self.photoCaptureButton setTitle:@"Send" forState:UIControlStateNormal];
+        [self.photoCaptureButton setTitle:@"Done" forState:UIControlStateNormal];
         [self.photoCaptureButton setImage:nil forState:UIControlStateNormal];
         [self.photoCaptureButton setEnabled:YES];
         if(![self.filtersToggleButton isSelected]){
