@@ -39,7 +39,7 @@
 @property (nonatomic, weak) IBOutlet UIButton *libraryToggleButton;
 @property (nonatomic, weak) IBOutlet UIButton *flashToggleButton;
 @property (nonatomic, weak) IBOutlet UIButton *retakeButton;
-
+@property (nonatomic, weak) IBOutlet UILabel *secondsLabel;
 @property (nonatomic, weak) IBOutlet UIScrollView *filterScrollView;
 @property (nonatomic, weak) IBOutlet UIImageView *filtersBackgroundImageView;
 @property (nonatomic, weak) IBOutlet UIView *photoBar;
